@@ -19,7 +19,7 @@ function check_textarea_length() {
 	?>
 	<script type="text/javascript">
 		// inject the html
-		jQuery("#post-status-info").after("<div style='border: 1px solid #e5e5e5; border-top:0; display: block; background-color: #F7F7F7; padding: 0.3em 0.7em;'><?php _e ('Sum of characters:', 'CHAR_COUNT'); ?> <span id=\"ilc_excerpt_counter\"></span>, <?php _e ('Number of selected characters', 'CHAR_COUNT'); ?>: <span id=\"ilc_live_counter\">()</span></div>");
+		jQuery("#wp-word-count").after("<td><?php _e ('Sum of characters:', 'CHAR_COUNT'); ?> <span id=\"ilc_excerpt_counter\"></span>, <?php _e ('Number of selected characters', 'CHAR_COUNT'); ?>: <span id=\"ilc_live_counter\">()</span></td>");
 		// count on load
 		window.onload = function () {
 			setInterval(function() {
