@@ -22,10 +22,15 @@ function check_textarea_length() {
 		jQuery("#wp-word-count").after("<td><?php _e ('Sum of characters:', 'CHAR_COUNT'); ?> <span id=\"ilc_excerpt_counter\"></span>, <?php _e ('Number of selected characters', 'CHAR_COUNT'); ?>: <span id=\"ilc_live_counter\">()</span></td>");
 		// count on load
 		window.onload = function () {
+			var count = 0;
+			var countbis = 1;
 			setInterval(function() {
-				cont = tinymce.get('content').getContent().replace(/(\s+)/ig,' ');
-				jQuery("#ilc_excerpt_counter").text(cont.length);
-			}, 300);
+				count = tinymce.get('content').getContent().replace(/(\s+)/ig,' ');
+				if ( count != countbis && count != 0 ) {
+					countbis = count;
+					jQuery("#ilc_excerpt_counter").text(count.length);
+				}
+			}, 500);
 		}
 	</script>
 	<?php
