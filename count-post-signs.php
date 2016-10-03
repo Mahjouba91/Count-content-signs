@@ -5,7 +5,7 @@ Description: Counts signs (characters and spaces) in real time while you are wri
 Author: Florian TIAR
 Author URI: http://tiar-florian.fr
 Version: 1.0
-Plugin URI: https://wordpress.org/plugins/wp-margin-notes/
+Plugin URI: https://wordpress.org/plugins/count-post-signs/
 Text Domain: count-post-signs
 Domain Path: languages
 */
