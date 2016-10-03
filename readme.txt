@@ -11,7 +11,7 @@ Counts signs (characters and spaces) in real time while you are writing your con
 
 == Description ==
 
-Did you ever wanted to know how many sings (characters) you type in the content area?
+Did you ever wanted to know how many signs (characters) you type in the content area?
 
 Now you know. It's the perfect plugin for online newspaper that need to pay authors by the signs number of their posts.
 
