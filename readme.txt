@@ -3,7 +3,7 @@ Plugin Name: Count Post Signs
 Description: Counts signs (characters and spaces) in real time while you are writing your content. Works for any kind of "post type" out of the box.
 Contributors: Mista-Flo
 Tags: content, character, admin, live
-Requires at least: 3.8.1
+Requires at least: 3.8
 Tested up to: 4.6
 Stable tag: 1.0
 
