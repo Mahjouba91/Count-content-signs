@@ -13,7 +13,7 @@ Counts signs (characters and spaces) in real time while you are writing your con
 
 Did you ever wanted to know how many signs (characters) you type in the content area?
 
-Now you know. It's the perfect plugin for online newspaper that need to pay authors by the signs number of their posts.
+It's the perfect plugin for online newspaper that need to pay authors by the signs number of their posts.
 
 == Installation ==
 
