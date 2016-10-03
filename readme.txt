@@ -1,20 +1,27 @@
 === Content character count live ===
-Plugin Name: BEA Count Post Characters (Fork)
-Description: Counts characters in real time while you are writing your content. Works for any kind of "post type" out of the box.
-Contributors: o----o, Florian TIAR
+Plugin Name: Count Post Signs
+Description: Counts signs (characters and spaces) in real time while you are writing your content. Works for any kind of "post type" out of the box.
+Contributors: Mista-Flo
 Tags: content, character, admin, live
-Requires at least: 3.4.1
-Tested up to: 4.3.5
-Stable tag: 1.1
+Requires at least: 3.8.1
+Tested up to: 4.6
+Stable tag: 1.0
 
-Counts charaters live while you write your content. Works for any kind of "post type" out of the box.
+Counts signs (characters and spaces) in real time while you are writing your content. Works for any kind of "post type" out of the box.
 
 == Description ==
 
-Did you ever wanted to know how many characters you type in the content area?
-Now you know.
+Did you ever wanted to know how many sings (characters) you type in the content area?
 
-Credits go to: <a href="http://konstruktors.com/blog/wordpress/3685-limit-number-words-characters-in-wordpress-editor/">Konstructor</a> and <a href="http://www.ilovecolors.com.ar/character-counter-excerpt-wordpress/">ilovecolors</a>.
+Now you know. It's the perfect plugin for online newspaper that need to pay authors by the signs number of their posts.
+
+== Installation ==
+
+This section describes how to install the plugin and get it working.
+
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Write your post content and see the signs number
 
 == Screenshots ==
  
@@ -22,29 +29,7 @@ Credits go to: <a href="http://konstruktors.com/blog/wordpress/3685-limit-number
 
 == Change log ==
 
- = 1.1
- * Edit : Use native function of WordPress (word count) to count chars with spaces
- * Edit : Remove number of selected characters (useless)
- * Tweak : Better performances
- * Tweak : Remove useless code
-
  = 1.0
- * New : Add French translation
- * Tweak : The count of signs is now in real time (every 500ms) when you're editing you're content (only update the count if the content lenght has changed)
- * Tweak : Also count the white spaces (signs = characters + white spaces)
- * Tweak : Move markup location to avoid fixed layout (you had to scroll to the bottom of the post, it was annoying for long posts)
-
- = 0.1.3 =
- * New : show number of selected characters
-
- = 0.1.2 =
- * New : Add Serb/Croatian translation
-
- = 0.1.1 =
- * New : Add Spanish translation
-
- = 0.1 =
  * initial version
-
  
 

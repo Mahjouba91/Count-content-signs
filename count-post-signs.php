@@ -1,15 +1,19 @@
 <?php
 /*
-Plugin Name: BEA Count Post Characters (Fork)
-Description: Counts characters in real time while you are writing your content. Works for any kind of "post type" out of the box.
-Author: o----o, Florian TIAR
-Version: 1.1
-Author URI: http://beapi.fr
+Plugin Name: Count Post Signs
+Description: Counts signs (characters and spaces) in real time while you are writing your content. Works for any kind of "post type" out of the box.
+Author: Florian TIAR
+Author URI: http://tiar-florian.fr
+Version: 1.0
+Plugin URI: https://wordpress.org/plugins/wp-margin-notes/
+Text Domain: count-post-signs
+Domain Path: languages
 */
 
-add_action('plugins_loaded', 'CHAR_COUNT_INIT');
-function CHAR_COUNT_INIT() {
-	load_plugin_textdomain( 'CHAR_COUNT', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+// Load translations
+add_action( 'plugins_loaded', 'count_post_signs_init' );
+function count_post_signs_init() {
+	load_plugin_textdomain( 'count-post-signs', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 // Update the char count : Use word count function of WP Core
@@ -18,7 +22,7 @@ function check_textarea_length() {
 	?>
 	<script type="text/javascript">
 		( function( $, counter ) {
-			$("#wp-word-count").after("<td id=\"wp-char-count\"><?php _e ('Sum of characters:', 'CHAR_COUNT'); ?> <span id=\"char-count\">0</span></td>");
+			$("#wp-word-count").after("<td id=\"wp-char-count\"><?php _e ( 'Sum of characters:', 'count-post-signs' ); ?> <span id=\"char-count\">0</span></td>");
 			$( function() {
 				var $content = $( '#content' ),
 					$count = $('#wp-char-count').find( '#char-count' ),
